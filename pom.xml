@@ -9,9 +9,9 @@
     <version>1-SNAPSHOT</version>
 
     <packaging>jar</packaging>
-    <url>https://github.com/sebastiankirsch/postrges-timeout</url>
+    <url>https://github.com/sebastiankirsch/postgres-timeout</url>
     <scm>
-        <url>https://github.com/sebastiankirsch/postrges-timeout.git</url>
+        <url>https://github.com/sebastiankirsch/postgres-timeout.git</url>
     </scm>
 
     <properties>
