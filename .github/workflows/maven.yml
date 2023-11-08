@@ -1,4 +1,4 @@
-name: Maven verfiy
+name: Maven verify
 
 on:
   push:
