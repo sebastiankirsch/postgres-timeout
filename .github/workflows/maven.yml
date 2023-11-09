@@ -1,13 +1,12 @@
-name: Maven verfiy
+name: Maven
 
 on:
   push:
-    branches: [ "master" ]
   pull_request:
-    branches: [ "master" ]
 
 jobs:
   build:
+    name: verify
     runs-on: ubuntu-latest
     steps:
     - name: Check-out
