@@ -1,4 +1,4 @@
-name: automerge dependabot updates
+name: Auto-merge for Dependabot updates
 on:
   pull_request:
     types:
@@ -10,23 +10,22 @@ on:
       - ready_for_review
       - reopened
       - unlocked
-  pull_request_review:
-    types:
-      - submitted
   check_suite:
     types:
       - completed
   status: {}
 jobs:
   automerge:
+    permissions: #necessary to merge the PR; probably b/c of reduced permissions for actions triggered by Dependabot
+      contents: write
+      pull-requests: read
     runs-on: ubuntu-latest
     steps:
       - id: automerge
-        name: automerge
-        uses: "pascalgn/automerge-action@v0.15.6"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          MERGE_DELETE_BRANCH: "true"
-          MERGE_FILTER_AUTHOR: "dependabot"
+          MERGE_FILTER_AUTHOR: "dependabot[bot]"
           MERGE_LABELS: "dependencies"
           MERGE_METHOD: "rebase"
+        name: automerge
+        uses: "pascalgn/automerge-action@v0.15.6"
