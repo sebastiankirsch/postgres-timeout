@@ -27,5 +27,6 @@ jobs:
           MERGE_FILTER_AUTHOR: "dependabot[bot]"
           MERGE_LABELS: "dependencies"
           MERGE_METHOD: "rebase"
+          UPDATE_LABELS: "disable_updating"
         name: automerge
         uses: "pascalgn/automerge-action@v0.15.6"
