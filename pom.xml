@@ -67,7 +67,7 @@
             <plugin>
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.15.9</version>
+                <version>0.44.0</version>
                 <configuration>
                     <logDate>default</logDate>
                     <autoPull>true</autoPull>
