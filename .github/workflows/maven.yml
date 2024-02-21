@@ -8,6 +8,7 @@ jobs:
   build:
     name: verify
     permissions:
+      contents: write
       security-events: write
     runs-on: ubuntu-latest
     steps:
