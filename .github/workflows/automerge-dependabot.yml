@@ -26,7 +26,7 @@ jobs:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_FILTER_AUTHOR: "dependabot[bot]"
           MERGE_LABELS: "dependencies"
-          MERGE_METHOD: "rebase"
+          MERGE_METHOD: "squash"
           MERGE_RETRIES: 4
           MERGE_RETRY_SLEEP: 120000
           UPDATE_LABELS: "disable_updating"
