@@ -74,7 +74,7 @@
                     <images>
                         <image>
                             <alias>db</alias>
-                            <name>postgres:9.5.3</name>
+                            <name>postgres:16</name>
                             <run>
                                 <ports>
                                     <port>db.port:5432</port>
