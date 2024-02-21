@@ -23,7 +23,7 @@ jobs:
     steps:
       - id: automerge
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: "${{ secrets.PAT_AUTOMERGE }}"
           MERGE_FILTER_AUTHOR: "dependabot[bot]"
           MERGE_LABELS: "dependencies"
           MERGE_METHOD: "squash"
