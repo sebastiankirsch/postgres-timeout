@@ -8,8 +8,7 @@ jobs:
   build:
     name: verify
     permissions:
-      contents: write
-      security-events: write
+      contents: write # to submit the dependency graph
     runs-on: ubuntu-latest
     steps:
     - name: Check-out
