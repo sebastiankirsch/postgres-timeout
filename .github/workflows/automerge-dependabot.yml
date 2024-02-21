@@ -31,4 +31,4 @@ jobs:
           MERGE_RETRY_SLEEP: 120000
           UPDATE_LABELS: "disable_updating"
         name: automerge
-        uses: "pascalgn/automerge-action@v0.15.6"
+        uses: "pascalgn/automerge-action@v0.16.2"
