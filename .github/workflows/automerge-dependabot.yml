@@ -28,7 +28,7 @@ jobs:
           MERGE_LABELS: "dependencies"
           MERGE_METHOD: "rebase"
           MERGE_RETRIES: 4
-          MERGE_RETRY_SLEEP: 120_000
+          MERGE_RETRY_SLEEP: 120000
           UPDATE_LABELS: "disable_updating"
         name: automerge
         uses: "pascalgn/automerge-action@v0.15.6"
