@@ -1,15 +1,13 @@
 name: Auto-merge for Dependabot updates
 on:
-  pull_request:
+  pull_request_target:
     types:
       - labeled
-      - unlabeled
       - synchronize
       - opened
       - edited
       - ready_for_review
       - reopened
-      - unlocked
   check_suite:
     types:
       - completed
